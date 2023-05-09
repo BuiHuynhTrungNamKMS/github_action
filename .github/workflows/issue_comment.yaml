@@ -3,7 +3,13 @@ name: Create new comment on new issue
 on:
     issues:
         types: [opened]
-        
+
+permissions:
+    id-token: write
+    actions: read
+    contents: read
+    pull-requests: read
+    security-events: write
 jobs:
     comment-with-action:
         runs-on: ubuntu-latest
