@@ -8,9 +8,10 @@ permissions:
     id-token: write
     actions: read
     contents: read
-    pull-requests: read
+    pull-requests: write
     security-events: write
     statuses: write
+    issues: write
 jobs:
     comment-with-action:
         runs-on: ubuntu-latest
